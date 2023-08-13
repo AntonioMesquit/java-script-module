@@ -1,4 +1,4 @@
-/*
+
 function minhafuncao(){
     console.log("testando");
 }
@@ -163,7 +163,7 @@ const atedez = (n , m) => {
     
     
 }
-*/
+
 
 function fatorial (x){
     if (x === 0){
