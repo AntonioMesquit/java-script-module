@@ -85,7 +85,7 @@ console.log(Object.keys(obj2))
 
 console.log(Object.entries(obj))
 
-*/
+
 const a = {
     name: "antonio"
 }
@@ -106,10 +106,37 @@ console.log(b)
 
 
 
+let i = 0
+const ok = {
+    for(i = 0; i <= 2; i++){
+   
+    }
+}
 
 
 
+const users = ["mateus", "joao", "antonio"]
 
+for(let i = 0; i < users.length;i++){
+    console.log(users[i])
+}
+*/
+
+const array = ["a" , "b" , "c"]
+console.log(array.length)
+array.push("d")
+console.log(array)
+
+array.pop()
+
+console.log(array)
+
+
+const itemremorivo = array.pop()
+
+
+console.log(itemremorivo)
+.array.push("z" , "x")
 
 
 
