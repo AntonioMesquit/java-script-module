@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 1s ease;
+    
+}
+body{
+    background-color: rgba(0, 0, 0, 0.547);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tittle{
+    position: relative;
+    padding: 10px;
+    background-color: rgba(0, 76, 255, 0.238);
+    color: #fff;
+    cursor: pointer;
+}
+.box1{
+    width: 50%;
+    transition: 1s;
+}
+img{
+    width: 20px;
+}
+.tittle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.txt{
+    position: relative;
+    background-color: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.box1.active .txt{
+    height: 150px;
+}
+.box1.active img{
+    transform: rotate(180deg);
+    transition: 1s;
+}
