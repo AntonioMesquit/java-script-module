@@ -2,46 +2,55 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: 1s;
+    transition: ease 1s;
 }
-
 body{
-    display: flex;
     height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.436) , rgba(0, 0, 0, 0.753));
+    background: linear-gradient(to bottom, rgb(50, 6, 6) ,red);
+    color: black;
 }
 .card{
-    width:550px;
+    width: 500px;
     background-color: white;
-    padding: 20px;
+    padding: 30px;
 }
 img{
     width: 20px;
 }
-.title{
-    display: flex;
-    background-color: rgba(137, 43, 226, 0.373);
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-}
 .box{
-    margin-bottom: 30px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
-.box.ativo .title h1{
-color: blue;
+.tit {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  
 }
-.text{
+.text p{
+overflow: hidden;
+max-height: 0;
+overflow-y: auto;
+
+}
+
+.box.ativo .text p {
     overflow: hidden;
-    overflow-y: auto;
-    height: 0px;
-}
-.box.ativo .text{
-    height: 50px;
+     max-height: 100px;
 }
 .box.ativo img{
     transform: rotate(180deg);
+}
+.box.ativo .tit{
+    margin-bottom: 10px;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.299);
 }
