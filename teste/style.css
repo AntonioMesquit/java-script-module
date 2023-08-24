@@ -2,46 +2,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: 1s;
 }
-
 body{
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.436) , rgba(0, 0, 0, 0.753));
+   background-color: black;
 }
-.card{
-    width:550px;
-    background-color: white;
-    padding: 20px;
+footer{
+    background-color: rgba(255, 255, 255, 0.332);
+    min-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 img{
-    width: 20px;
+    width: 100px;
 }
-.title{
-    display: flex;
-    background-color: rgba(137, 43, 226, 0.373);
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-}
-.box{
-    margin-bottom: 30px;
-    cursor: pointer;
-}
-.box.ativo .title h1{
-color: blue;
-}
-.text{
-    overflow: hidden;
-    overflow-y: auto;
-    height: 0px;
-}
-.box.ativo .text{
-    height: 50px;
-}
-.box.ativo img{
-    transform: rotate(180deg);
+a{
+    padding: 30px;
+    color: white;
+    text-decoration: none;
 }
