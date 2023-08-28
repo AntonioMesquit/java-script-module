@@ -1,7 +1,6 @@
-const bug = document.querySelector(".burguer");
-const nv = document.querySelector(".nav-menu");
+const barras = document.querySelector(".barras");
 
-bug.addEventListener('click' , () => {
-    bug.classList.toggle("active")
-    nv.classList.toggle("active")
+
+barras.addEventListener('click' , {
+barras.classList.toggle("active")
 })

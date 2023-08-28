@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.535);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.barras{
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.327);
+
+}
+.bar{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(121, 38, 38);
+    color: rgb(54, 50, 50);
+    top: 48.6%;
+    left: 48.1%;
+    border-radius: 50%;
+    
+
+}
+.barras.active .bar{
+    left: 50.2%;
+    opacity: 0;
+}
+.bar2{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(54, 50, 50);
+    top: 48.6%;
+    left: 48.1%;
+    border-radius: 50%;
+    opacity: 0;
+}
+.barras.active .bar2{
+    left: 50.2%;
+    opacity: 1;
+}
+body.active{
+background-color: rgb(0, 0, 0);
+}
