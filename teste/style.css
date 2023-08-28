@@ -2,55 +2,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: ease 1s;
 }
 body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom, rgb(50, 6, 6) ,red);
-    color: black;
+   background-color: black;
 }
-.card{
-    width: 500px;
-    background-color: white;
-    padding: 30px;
+footer{
+    background-color: rgba(255, 255, 255, 0.332);
+    min-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 img{
-    width: 20px;
+    width: 100px;
 }
-.box{
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-.tit {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-  
-}
-.text p{
-overflow: hidden;
-max-height: 0;
-overflow-y: auto;
-
-}
-
-.box.ativo .text p {
-    overflow: hidden;
-     max-height: 100px;
-}
-.box.ativo img{
-    transform: rotate(180deg);
-}
-.box.ativo .tit{
-    margin-bottom: 10px;
-}
-::-webkit-scrollbar{
-    width: 0px;
-}
-::-webkit-scrollbar-thumb{
-    background-color: rgba(0, 0, 0, 0.299);
+a{
+    padding: 30px;
+    color: white;
+    text-decoration: none;
 }
